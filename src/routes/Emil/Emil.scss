@@ -1,5 +1,14 @@
 /* Add your CSS here */
 
-#my-button {
-  background-color: red;
-}
+$white: #ffffff;
+ //? for testing.
+$theme-colors: (
+    "light":      #70bedf,
+    "dark":       #613271,
+    "primary":    #eb539c,
+    "secondary":  #e4a8ad,
+    "info":       #cdc84e,
+    "success":    #2dca90,
+    "warning":    #dfda24,
+    "danger":     #ef4713,
+);
