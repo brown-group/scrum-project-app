@@ -36,11 +36,12 @@ You may also see any lint errors in the console.
 ## Creating and importing components to your page:
 
 1. Create personal components folder:
-  * Create a subfolder within the components folder.
-  * Name this subfolder using your own name (e.g., Emil).
+  - Create a subfolder within "your name" folder.
+  - Name this subfolder components.
+
 2. Using the personal folder.
-  * Place your components (JavaScript files, React Components, etc) inside your personal folder.
-  * When you need to use a component on your page, import it from your personal folder located in the Components folder.
+  - Place your components (JavaScript files, React Components, etc) inside your personal components folder.
+  - When you need to use a component on your page, import them from your personal components folder.
 
   ### Example: 
   ```
@@ -50,22 +51,27 @@ You may also see any lint errors in the console.
   ├── src/
   │   ├── assets\scss
   │   ├── components/
+  │   │   └── Navbar.jsx
+  │   ├── routes
   │   │   ├── Emil/
-  │   │   │   ├── Button.jsx
-  │   │   │   ├── GetColorPallet.jsx
+  │   │   │   ├── Emil.jsx
+  │   │   │   ├── Emil.scss
+  │   │   │   ├── components/
+  │   │   │   │   ├── Button.jsx
+  │   │   │   │   └── GetColorPallet.jsx
   │   │   │   └── ...
   │   │   ├── Erik/
-  │   │   │   ├── CreateContent.jsx
-  │   │   │   ├── InfoWindow.jsx
-  │   │   │   └── ...
-  │   │   └── ...
-  │   ├── routes
+  │   │   ├── Husni/
+  │   │   ├── Paulina/
+  │   │   ├── Zainab/
+  │   │   ├── Index.jsx
+  │   │   ├── NotFound.jsx
+  │   │   └── Layout.jsx
   │   ├── App.js
   │   ├── index.js
   │   └── ...
   └── ...
-```
-
+  ```
 
 ### !!! Important !!!
 
