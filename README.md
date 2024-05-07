@@ -33,6 +33,46 @@ You may also see any lint errors in the console.
 - Both CSS and Bootstrap can be used to style your HTML.
 - Sample code has been added to demonstrate how you can use vanilla JS and React to add functionality.
 
+## Creating and importing components to your page:
+
+1. Create personal components folder:
+  - Create a subfolder within "your name" folder.
+  - Name this subfolder components.
+
+2. Using the personal folder.
+  - Place your components (JavaScript files, React Components, etc) inside your personal components folder.
+  - When you need to use a component on your page, import them from your personal components folder.
+
+  ### Example: 
+  ```
+  SCRUM-PROJECT-APP/
+  ├── node_modules
+  ├── public
+  ├── src/
+  │   ├── assets\scss
+  │   ├── components/
+  │   │   └── Navbar.jsx
+  │   ├── routes
+  │   │   ├── Emil/
+  │   │   │   ├── Emil.jsx
+  │   │   │   ├── Emil.scss
+  │   │   │   ├── components/
+  │   │   │   │   ├── Button.jsx
+  │   │   │   │   └── GetColorPallet.jsx
+  │   │   │   └── ...
+  │   │   ├── Erik/
+  │   │   ├── Husni/
+  │   │   ├── Paulina/
+  │   │   ├── Zainab/
+  │   │   ├── Index.jsx
+  │   │   ├── NotFound.jsx
+  │   │   └── Layout.jsx
+  │   ├── App.js
+  │   ├── index.js
+  │   └── ...
+  └── ...
+  ```
+
 ### !!! Important !!!
 
 Make sure you are in your feature branch when committing changes. We do not want to make any changes to the main branch.
