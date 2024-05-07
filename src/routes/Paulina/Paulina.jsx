@@ -1,32 +1,22 @@
-/* Feel free to use CSS or Bootstrap to style your HTML. Add functionality using JavaScript */
-
-import { useState } from "react";
-import "./Paulina.scss";
+import LeafletMap from "./components/LeafletMap";
 
 export default function Paulina() {
-  const [title, setTitle] = useState("Paulina");
-
-  const myFunction = () => {
-    alert("Hello");
-  };
-
   return (
     <>
-      <h1>{title}</h1>
-
-      <button id="my-button" onClick={myFunction}>
-        CSS button
-      </button>
-
-      <button
-        type="button"
-        className="btn btn-primary"
-        onClick={() => {
-          setTitle("Lorem ipsum");
-        }}
-      >
-        Bootstrap button
-      </button>
+      <div className="container my-5">
+        <h1>Lorem ipsum</h1>
+        <div className="row">
+          <div className="col-12 col-md-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis nostrum iusto vel dolore quis! Animi error dolorem
+            laudantium esse, laboriosam sunt quas, alias, quam minima ducimus
+            commodi iusto facilis perferendis!
+          </div>
+          <div className="col-12 col-md-6">
+            <LeafletMap />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
