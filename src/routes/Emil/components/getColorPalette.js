@@ -1,7 +1,7 @@
 export function getColorPalette() {
     var url = "http://colormind.io/api/";
     var data = {
-        model: "default",
+        model: "ui",
     };
 
     var http = new XMLHttpRequest();

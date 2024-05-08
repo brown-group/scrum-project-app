@@ -2,40 +2,41 @@
 import { useState, useEffect } from "react";
 //* Importing Components and functions.
 import ColorBox from "./components/ColorBox";
+import Slider from "./components/Slider";
 import { getColorPalette } from "./components/getColorPalette";
 //* Importing Styles.
 import "./Emil.scss";
 
 export default function Emil() {
-  const [title] = useState("Emil");
   const [colors, setColors] = useState([]);
 
   useEffect(() => {
-    async function fetchData() {
-      const palette = await getColorPalette();
-      setColors(palette);
-    }
-    fetchData();
+    fetchColorPalette();
   }, []);
 
-  const handleButtonClick = async () => {
+  const fetchColorPalette = async () => {
     const palette = await getColorPalette();
     setColors(palette);
   };
 
+  const handleButtonClick = () => {
+    fetchColorPalette();
+  };
+
   return (
     <>
-      <h1>{title}</h1>
+      <h1>Color Palette Generator</h1>
       <div className="colorWrapper">
-        <div className="color-palette">
+        <div className="card-group">
           {colors.map((color, index) => (
             <ColorBox key={index} color={color} />
           ))}
         </div>
-        <button id="palette-button" onClick={handleButtonClick}>
+        <button type="button" className="btn btn-primary" onClick={handleButtonClick}>
           Get new color
         </button>
       </div>
+      <Slider />
     </>
   );
 }

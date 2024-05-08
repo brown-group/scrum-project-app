@@ -1,12 +1,13 @@
 const ColorBox = ({ color }) => {
     return (
-        <div className="color-box-container">
+
+        <div class="card">
             <div
                 className="color-box"
                 style={{ backgroundColor: `rgb(${color.join(",")})` }}
             ></div>
-            <div className="color-info">
-                RGB: {color.join(", ")}
+            <div class="card-body">
+                <p class="card-text color-info"> rgb( {color.join(", ")})</p>
             </div>
         </div>
     );

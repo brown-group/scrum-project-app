@@ -3,13 +3,6 @@
     margin: 3rem;
 }
 
-.color-palette {
-    display: flex;
-    width: 80%;
-    margin-bottom: 1rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
 .color-box-container {
     width: 20%;
     display: flex;
@@ -22,6 +15,20 @@
     width: 100%;
     height: 10rem;
     /* Adjust the height of each color box */
+}
+
+.color-box-slider{
+    height:5rem;
+
+}
+.card-slider{
+    font-size: 10px;
+    height: 4rem;
+
+}
+.card-body-slider{
+    height: 2rem;
+    padding: .5rem;
 }
 
 .color-info {
