@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./Husni.scss";
 
 export default function Husni() {
-  const [title, setTitle] = useState("Husni");
+  const [title, setTitle] = useState("Husni Hamdan");
 
   const myFunction = () => {
     alert("Hello");
