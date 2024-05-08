@@ -4,13 +4,10 @@ export default function Paulina() {
   return (
     <>
       <div className="container my-5">
-        <h1>Lorem ipsum</h1>
+        <h1>Find your location</h1>
         <div className="row">
           <div className="col-12 col-md-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perspiciatis nostrum iusto vel dolore quis! Animi error dolorem
-            laudantium esse, laboriosam sunt quas, alias, quam minima ducimus
-            commodi iusto facilis perferendis!
+            Click the map to show a marker at your detected location
           </div>
           <div className="col-12 col-md-6">
             <LeafletMap />
