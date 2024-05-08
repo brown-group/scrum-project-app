@@ -1,8 +1,10 @@
 import { MapContainer, TileLayer } from "react-leaflet";
 import LeafletLocationMarker from "./LeafletLocationMarker";
+import LeafletMarker from "./LeafletMarker";
 
 export default function LeafletMap() {
   const position = [51.505, -0.09];
+
   return (
     <MapContainer
       center={position}
@@ -15,6 +17,10 @@ export default function LeafletMap() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <LeafletLocationMarker />
+      <LeafletMarker
+        position={[55.6043853, 13.0017585]}
+        text={"Lexicon Malmö"}
+      />
     </MapContainer>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useMapEvents } from "react-leaflet";
 import LeafletMarker from "./LeafletMarker";
+import LeafletPolyline from "./LeafletPolyline";
 
 export default function LeafletLocationMarker() {
   const [position, setPosition] = useState(null);
@@ -15,6 +16,9 @@ export default function LeafletLocationMarker() {
   });
 
   return position === null ? null : (
-    <LeafletMarker position={position} text={"You are here"} />
+    <>
+      <LeafletMarker position={position} text={"You are here"} />
+      <LeafletPolyline position={position} />
+    </>
   );
 }
