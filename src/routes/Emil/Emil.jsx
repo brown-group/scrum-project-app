@@ -25,18 +25,24 @@ export default function Emil() {
 
   return (
     <>
-      <h1>Color Palette Generator</h1>
-      <div className="colorWrapper">
+      <div className="container my-5 px-4 sm:px-5">
+      <h1>
+        Color Palette Generator
+      </h1>
+      <p>Click the button to generate a new color palette</p>
+      <small className="text-body-secondary">Using: colormind.io API</small>
+      <div className="colorWrapper container-fluid g-0">
         <div className="card-group">
           {colors.map((color, index) => (
             <ColorBox key={index} color={color} />
           ))}
         </div>
-        <button type="button" className="btn btn-primary" onClick={handleButtonClick}>
+        <button type="button" className="btn btn-primary my-3" onClick={handleButtonClick}>
           Get new color
         </button>
       </div>
       <Slider />
+      </div>
     </>
   );
 }

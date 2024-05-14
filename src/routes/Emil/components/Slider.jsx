@@ -9,7 +9,7 @@ const Slider = () => {
     const images = [image1, image2, image3];
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid g-0">
             <div id="carouselExampleCaptions" className="carousel slide">
                 <div className="carousel-indicators">
                     {images.map((_, index) => (
