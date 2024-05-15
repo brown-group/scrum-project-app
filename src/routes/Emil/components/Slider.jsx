@@ -1,11 +1,16 @@
-
+//* importing components 
 import CarouselItem from './CarouselItem';
+
+//* importing colorData
 import { colorData } from './data';
+
+//* Importing image assets
 import image1 from "../images/image1.png";
 import image2 from "../images/image2.png";
 import image3 from "../images/image3.png";
 
 const Slider = () => {
+    
     const images = [image1, image2, image3];
 
     return (
