@@ -1,3 +1,4 @@
+//* functional component named ColorBox, which takes a prop named color. 
 const ColorBox = ({ color }) => {
     return (
 

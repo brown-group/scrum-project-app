@@ -1,3 +1,4 @@
+//* functional component named Card, which takes two props: color and text
 const Card = ({ color, text }) => {
     return (
         <div className="card card-slider">

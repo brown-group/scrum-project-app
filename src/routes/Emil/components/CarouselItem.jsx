@@ -1,5 +1,7 @@
 import Card from './Card';
 
+//* functional component named CarouselItem, which takes three props: image, colorData, and isActive
+//* Maps through the colorData array and render a Card component for each color.
 const CarouselItem = ({ image, colorData, isActive }) => {
   return (
     <div className={`carousel-item ${isActive ? 'active' : ''}`}>
