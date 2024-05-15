@@ -76,3 +76,4 @@ You may also see any lint errors in the console.
 ### !!! Important !!!
 
 Make sure you are in your feature branch when committing changes. We do not want to make any changes to the main branch.
+

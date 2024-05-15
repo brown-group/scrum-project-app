@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#fcfcfc" }}>
       <div className="container-fluid">
         <NavLink className="navbar-brand" to={``}>
-          Index
+          <img src="./images/logo.png" alt="logo" style={{height: "2rem"}}/>
         </NavLink>
         <button
           className="navbar-toggler"
