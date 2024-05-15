@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import ColorBox from "./components/ColorBox";
 import Slider from "./components/Slider";
 import { getColorPalette } from "./components/getColorPalette";
-import "./Emil.scss";
 
 export default function Emil() {
 
@@ -28,11 +27,11 @@ export default function Emil() {
 
   return (
     <>
-      <div className="container my-5 px-4 sm:px-5">
-        <h1>
+      <div className="container my-5">
+        <h1 className="fs-1">
           Color Palette Generator
         </h1>
-        <p>Click the button to generate a new color palette</p>
+        <p className="fs-5">Click the button to generate a new color palette</p>
         <small className="text-body-secondary">Using: colormind.io API</small>
         <div className="colorWrapper container-fluid g-0">
           <div className="card-group">
@@ -44,6 +43,7 @@ export default function Emil() {
             Get new color
           </button>
         </div>
+        <h2>Example: Utilizing Palette Generator</h2>
         <Slider />
       </div>
     </>
