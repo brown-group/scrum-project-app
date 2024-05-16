@@ -62,7 +62,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top: 20;
   right: 0;
@@ -75,6 +75,9 @@ body {
   transition: 0.2s;
   box-shadow: -3px -3px 7px #ffffff73,
     2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+.header a{
+  text-decoration: none;
 }
 
 .header.shadow {
@@ -115,10 +118,18 @@ body {
   display: none;
 }
 
-#darkmode {
+.darkmode {
   font-size: 22px;
   cursor: pointer;
+  background-attachment: auto;
+  background-color:transparent;
+  border: none;
 }
+.navbar .darkmode:hover {
+  color: var(--hover);
+}
+
+
 
 .home {
   position: relative;
@@ -273,19 +284,19 @@ span {
   border-radius: 0.5rem;
 }
 
-.html-bar {
+.skill1-bar {
   width: 94%;
 }
 
-.css-bar {
+.skill2-bar {
   width: 84%;
 }
 
-.js-bar {
+.skill3-bar {
   width: 74%;
 }
 
-.react-bar {
+.skill4-bar {
   width: 80%;
 }
 

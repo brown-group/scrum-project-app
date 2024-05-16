@@ -1,4 +1,4 @@
-// let header = document.querySelector("header");
+// let header = document.querySelector(".header");
 // let menu = document.querySelector("#menu-icon");
 // let navbar = document.querySelector(".navbar");
 
@@ -14,21 +14,21 @@
 // };
 
 // Dark Mode / light mode
-let darkmode = document.querySelector("#darkmode");
+// let darkmode = document.querySelector("#darkmode");
 
-darkmode.onclick = () => {
-  if (darkmode.classList.contains("bx-moon")) {
-    darkmode.classList.replace("bx-moon", "bx-sun");
-    document.body.classList.add("active");
-  } else {
-    darkmode.classList.replace("bx-sun", "bx-moon");
-    document.body.classList.remove("active");
-  }
-};
-window.addEventListener('load', function() {
-  let x = document.getElementById('loader');
-  x.style.display = 'none';
-});
+// darkmode.onclick = () => {
+//   if (darkmode.classList.contains("bx-moon")) {
+//     darkmode.classList.replace("bx-moon", "bx-sun");
+//     document.body.classList.add("active");
+//   } else {
+//     darkmode.classList.replace("bx-sun", "bx-moon");
+//     document.body.classList.remove("active");
+//   }
+// };
+// window.addEventListener('load', function() {
+//   let x = document.getElementById('loader');
+//   x.style.display = 'none';
+// });
 
 // document.getElementById("test").addEventListener("click", function(){
 //     console.log("test")
