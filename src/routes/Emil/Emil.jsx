@@ -1,32 +1,51 @@
-/* Feel free to use CSS or Bootstrap to style your HTML. Add functionality using JavaScript */
-
-import { useState } from "react";
-import "./Emil.scss";
+//? Importing Hooks, Components, functions and Styles.
+import { useState, useEffect } from "react";
+import ColorBox from "./components/ColorBox";
+import Slider from "./components/Slider";
+import { getColorPalette } from "./components/getColorPalette";
 
 export default function Emil() {
-  const [title, setTitle] = useState("Emil");
 
-  const myFunction = () => {
-    alert("Hello");
+  //? State to hold the generated color palette
+  const [colors, setColors] = useState([]);
+
+  //? Effect hook to fetch color palette when component mounts (initial render)
+  useEffect(() => {
+    fetchColorPalette();
+  }, []);
+
+  //? Function to fetch color palette asynchronously
+  const fetchColorPalette = async () => {
+    const palette = await getColorPalette();
+    setColors(palette); //* Update state with new palette
+  };
+
+  //? Event handler for button click to fetch new color palette
+  const handleButtonClick = () => {
+    fetchColorPalette();
   };
 
   return (
     <>
-      <h1>{title}</h1>
-
-      <button id="my-button" onClick={myFunction}>
-        CSS button
-      </button>
-
-      <button
-        type="button"
-        className="btn btn-primary"
-        onClick={() => {
-          setTitle("Lorem ipsum");
-        }}
-      >
-        Bootstrap button
-      </button>
+      <div className="container my-5">
+        <h1 className="fs-1">
+          Color Palette Generator
+        </h1>
+        <p className="fs-5">Click the button to generate a new color palette</p>
+        <small className="text-body-secondary">Using: colormind.io API</small>
+        <div className="colorWrapper container-fluid g-0">
+          <div className="card-group">
+            {colors.map((color, index) => (
+              <ColorBox key={index} color={color} />
+            ))}
+          </div>
+          <button type="button" className="btn btn-primary my-3" onClick={handleButtonClick}>
+            Get new color
+          </button>
+        </div>
+        <h2>Example: Utilizing Palette Generator</h2>
+        <Slider />
+      </div>
     </>
   );
 }
