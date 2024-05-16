@@ -6,11 +6,11 @@ function DarkModeToggle() {
 
   const handleDarkModeToggle = () => {
     setIsDarkMode(prevMode => !prevMode);
-    const body = document.body;
+    const body = document.getElementsByClassName("husni");
     if (!isDarkMode) {
-      body.classList.add("active");
+      body.classList.add("husni-active");
     } else {
-      body.classList.remove("active");
+      body.classList.remove("husni-active");
     }
   };
 
