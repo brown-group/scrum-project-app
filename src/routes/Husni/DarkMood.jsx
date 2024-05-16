@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import './Husni.css'
+import React, { useState } from "react";
+import "./Husni.css";
 
 function DarkModeToggle() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleDarkModeToggle = () => {
-    setIsDarkMode(prevMode => !prevMode);
+    setIsDarkMode((prevMode) => !prevMode);
     const body = document.getElementsByClassName("husni");
     if (!isDarkMode) {
       body.classList.add("husni-active");

@@ -45,15 +45,15 @@
   padding: 50px 10%;
 }
 
-/* .husni-active {
+.husni-active {
   --text-color: #fff;
   --bg-color: #0f0c27;
-} */
+}
 
-/* body {
+#wrapper {
   background: var(--bg-color);
   color: var(--text-color);
-} */
+}
 
 .husni *::selection {
   color: var(--bg-color);
@@ -85,10 +85,9 @@
   background: var(--bg-color);
   padding: 13px 10%;
   transition: 0.2s;
-  box-shadow: -3px -3px 7px #ffffff73,
-    2px 2px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
-.husni-header a{
+.husni-header a {
   text-decoration: none;
 }
 
@@ -131,18 +130,15 @@
 }
 
 .darkmode {
-  display: none;
   font-size: 22px;
   cursor: pointer;
   background-attachment: auto;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
 }
 .husni-navbar .darkmode:hover {
   color: var(--hover);
 }
-
-
 
 .husni-home {
   position: relative;
@@ -210,7 +206,6 @@
   background: var(--hover);
 }
 
-
 .husni-about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -260,7 +255,6 @@
   width: 80%;
   padding-left: 4rem;
   object-position: center;
-  
 }
 
 .husni-bars-box {
@@ -371,7 +365,6 @@ span {
   display: grid;
   place-items: center;
   margin-top: 2rem;
-
 }
 
 .contact-form form {
@@ -427,7 +420,7 @@ form textarea {
 .husni-footer h2 {
   font-size: 1.5rem;
   margin-bottom: 1.6rem;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .husni-footerSocial a i {
@@ -476,7 +469,6 @@ form textarea {
     --big-font: 2.4rem;
     --medium-font: 1.2rem;
   }
-  
 
   .husni-header {
     padding: 11px 4%;
@@ -592,4 +584,3 @@ form textarea {
     margin-left: 25%;
   }
 }
-
