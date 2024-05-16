@@ -18,7 +18,7 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className="app" id='Zwraper'>
       <div className="search">
         <input
           value={location}
@@ -30,23 +30,24 @@ function App() {
       <div className="container">
         <div className="top">
           <div className="location">
-            <p>{data.name}</p>
+            
+            <p className='date-P'>{data.name}</p>
           </div>
           <div className="temp">
-            {data.main ? <h1>{((data.main.temp - 32) * 5/9).toFixed()}°C</h1> : null}
+            {data.main ? <h1 className='tempTitle'>{((data.main.temp - 32) * 5/9).toFixed()}°C</h1> : null}
           </div>
           <div className="description">
-            {data.weather ? <p>{data.weather[0].main}</p> : null}
+            {data.weather ? <p className = 'date-P' >{data.weather[0].main}</p> : null}
           </div>
         </div>
 
         {data.name !== undefined &&
           <div className="bottom">
             <div className="humidity">
-              {data.main ? <p className='bold'>Humidity {data.main.humidity}%</p> : null}
+              {data.main ? <p className='bold date-P'>Humidity {data.main.humidity}%</p> : null}
             </div>
             <div className="wind">
-              {data.wind ? <p className='bold'> Wind Speed {data.wind.speed.toFixed()} MPH</p> : null}
+              {data.wind ? <p className='bold date-P'> Wind Speed {data.wind.speed.toFixed()} MPH</p> : null}
             </div>
           </div>
         }

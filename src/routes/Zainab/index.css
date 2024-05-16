@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body {
+#Zwraper {
   font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,11 +14,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p {
+.date-P {
   font-size: 1.6rem;
 }
 
-h1 {
+.tempTitle {
   font-size: 6rem;
 }
 
