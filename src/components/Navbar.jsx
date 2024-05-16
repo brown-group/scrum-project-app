@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#fcfcfc" }}>
+    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#fcfcfc", boxShadow: "rgba(228, 75, 76, 0.1) 0px 3px 10px" }}>
       <div className="container-fluid">
         <NavLink className="navbar-brand" to={``}>
           <img src="./images/logo.png" alt="logo" style={{height: "2rem"}}/>
@@ -20,30 +20,27 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbar">
+        <div className="collapse navbar-collapse" style={{justifyContent: "flex-end"}} id="navbar">
           <div className="navbar-nav">
             <NavLink className="nav-link" to={`/page1`}>
-              Page 1
+              Color Palette
             </NavLink>
           </div>
           <div className="navbar-nav">
-            <NavLink className="nav-link" to={`/page2`}>
-              Page 2
-            </NavLink>
           </div>
           <div className="navbar-nav">
             <NavLink className="nav-link" to={`/page3`}>
-              Page 3
+              Portfolio
             </NavLink>
           </div>
           <div className="navbar-nav">
             <NavLink className="nav-link" to={`/page4`}>
-              Page 4
+              Location
             </NavLink>
           </div>
           <div className="navbar-nav">
             <NavLink className="nav-link" to={`/page5`}>
-              Page 5
+              Weather
             </NavLink>
           </div>
         </div>

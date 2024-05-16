@@ -7,7 +7,6 @@ import Layout from "./routes/Layout";
 import NotFound from "./routes/NotFound";
 import Index from "./routes/Index";
 import Emil from "./routes/Emil/Emil";
-import Erik from "./routes/Erik/Erik";
 import Husni from "./routes/Husni/Husni";
 import Paulina from "./routes/Paulina/Paulina";
 import Zainab from "./routes/Zainab/Zainab";
@@ -19,7 +18,6 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Index />} />
           <Route path="page1" element={<Emil />} />
-          <Route path="page2" element={<Erik />} />
           <Route path="page3" element={<Husni />} />
           <Route path="page4" element={<Paulina />} />
           <Route path="page5" element={<Zainab />} />

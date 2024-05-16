@@ -60,7 +60,6 @@ You may also see any lint errors in the console.
   │   │   │   │   ├── Button.jsx
   │   │   │   │   └── GetColorPallet.jsx
   │   │   │   └── ...
-  │   │   ├── Erik/
   │   │   ├── Husni/
   │   │   ├── Paulina/
   │   │   ├── Zainab/
