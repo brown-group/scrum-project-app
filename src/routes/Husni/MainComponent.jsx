@@ -1,12 +1,12 @@
 import React from 'react';
 import './Husni.css';
 import DarkModeToggle from "./DarkMood"
-import image from "./AvatarsImg.jpg"
+import image from "./AvatarsImg.png"
 
 export default function MainComponent() {
 
     return (
-        <div id='husni'>
+        <div className='husni'>
             <div id="loader"></div>
             <div className="husni-header">
                 <a href="#home" className="husni-logo">Your <span>Name</span>.</a>
@@ -34,7 +34,7 @@ export default function MainComponent() {
                     <span>Hello, I'm</span>
                     <h1>Your Name</h1>
                     <h2>Professional</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum est nisl, id viverra ex consectetur sed. Vivamus condimentum mauris in urna tempor aliquam. Vestibulum vitae bibendum ante, quis eleifend elit, lacinia tincidunt erat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum est nisl, id viverra ex consectetur sed. Vivamus condimentum mauris in urna tempor aliquam. Quisque fermentum est nisl, id viverra ex consectetur sed. Vivamus condimentum mauris in urna tempor aliquam. Vestibulum vitae bibendum ante, quis eleifend elit, lacinia tincidunt erat.</p>
                     <a href="./cv-template.pdf" download="./cv-template.pdf" className="husni-btn">Download CV</a>
                 </div>
             </section>
@@ -129,18 +129,18 @@ export default function MainComponent() {
                     <h2>Contact</h2>
                     <span>Connect With Me</span>
                 </div>
-                <div className="husni-contact-form">
-                    <form className="husni-form" action="#">
+                <div className="contact-form">
+                    <form className='husni-form' action="#">
                         <input placeholder="Your Name" required />
                         <input placeholder="Your Email" required name="" type="email" />
                         <textarea cols="30" name="" placeholder="Write Message Here..." required rows="10"></textarea>
-                        <input type="submit" className="husni-contact-button" value="Send" />
+                        <input type="submit" className="contact-button" value="Send"/>
                     </form>
                 </div>
             </section>
             <div className="husni-footer">
                 <h2>Follow Me</h2>
-                <div className="husni-footer-social">
+                <div className="husni-footerSocial">
                     <a href="https://www.facebook.com"><i className="bx bxl-facebook"></i></a>
                     <a href="https://www.twitter.com"><i className="bx bxl-twitter"></i></a>
                     <a href="https://www.instagram.com"><i className="bx bxl-instagram"></i></a>
