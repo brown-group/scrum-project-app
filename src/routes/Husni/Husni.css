@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap");
 
-* {
+.husni * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -96,18 +96,18 @@ body {
   color: crimson;
 }
 
-.navbar {
+.navbarHusni {
   display: flex;
 }
 
-.navbar a {
+.navbarHusni a {
   font-size: 1rem;
   padding: 10px 20px;
   color: var(--text-color);
   font-weight: 500;
 }
 
-.navbar a:hover {
+.navbarHusni a:hover {
   color: var(--hover);
 }
 
@@ -125,7 +125,7 @@ body {
   background-color:transparent;
   border: none;
 }
-.navbar .darkmode:hover {
+.navbarHusni .darkmode:hover {
   color: var(--hover);
 }
 
@@ -473,7 +473,7 @@ form textarea {
     color: var(--text-color);
   }
 
-  .header .navbar {
+  .header .navbarHusni {
     position: absolute;
     top: -500px;
     left: 0;
@@ -486,11 +486,11 @@ form textarea {
     text-align: center;
   }
 
-  .navbar.active {
+  .navbarHusni.active {
     top: 100%;
   }
 
-  .navbar a {
+  .navbarHusni a {
     padding: 1.5rem;
     display: block;
     background: var(--bg-color);

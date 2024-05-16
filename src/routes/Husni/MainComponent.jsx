@@ -5,12 +5,12 @@ import DarkModeToggle from "./DarkMood"
 export default function MainComponent() {
 
     return (
-        <div>
+        <div className='husni'>
             <div id="loader"></div>
             <div className="header">
                 <a href="#home" className="logo">Your <span>Name</span>.</a>
                 <div className="bx bx-menu" id="menu-icon"></div>
-                <ul className="navbar">
+                <ul className="navbarHusni">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
