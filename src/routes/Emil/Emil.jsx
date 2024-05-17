@@ -1,4 +1,3 @@
-//? Importing Hooks, Components, functions and Styles.
 import { useState, useEffect } from "react";
 import ColorBox from "./components/ColorBox";
 import Slider from "./components/Slider";
@@ -16,8 +15,12 @@ export default function Emil() {
 
   //? Function to fetch color palette asynchronously
   const fetchColorPalette = async () => {
-    const palette = await getColorPalette();
-    setColors(palette); //* Update state with new palette
+    try {
+      const palette = await getColorPalette();
+      setColors(palette); //* Update state with new palette
+    } catch (error) {
+      console.error("Failed to fetch color palette:", error);
+    }
   };
 
   //? Event handler for button click to fetch new color palette
@@ -32,7 +35,7 @@ export default function Emil() {
           Color Palette Generator
         </h1>
         <p className="fs-5">Click the button to generate a new color palette</p>
-        <small className="text-body-secondary">Using: colormind.io API</small>
+        <small className="text-body-secondary">Using: random-flat-colors API</small>
         <div className="colorWrapper container-fluid g-0">
           <div className="card-group">
             {colors.map((color, index) => (
