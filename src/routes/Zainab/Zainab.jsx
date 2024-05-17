@@ -1,12 +1,11 @@
-/* Feel free to use CSS or Bootstrap to style your HTML. Add functionality using JavaScript */
-import "./Zainab.scss";
-import App from "./App.js";
+import "./Zainab.scss";  // Importing the SCSS file for styling
+import App from "./App.js";  // Importing the main App component
 
-export default function Zainab() {
+export default function Zainab() {  // Defining and exporting the Zainab component
 
   return (
-    <>
-    <App></App>
+    <>  {/* React Fragment to wrap the App component */}
+      <App></App>  {/* Rendering the App component */}
     </>
   );
 }

@@ -1,99 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');  /* Importing fonts from Google Fonts */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;  /* Ensures padding and border are included in element's total width and height */
+  margin: 0;  /* Resets margin for all elements */
+  padding: 0;  /* Resets padding for all elements */
 }
 
 #Zwraper {
-  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',  /* Sets default font-family for the element with id 'Zwraper' */
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;  /* Smooths fonts on Webkit browsers */
+  -moz-osx-font-smoothing: grayscale;  /* Smooths fonts on Firefox (Mac OS) */
 }
 
 .date-P {
-  font-size: 1.6rem;
+  font-size: 1.6rem;  /* Sets font size for elements with class 'date-P' */
 }
 
 .tempTitle {
-  font-size: 6rem;
+  font-size: 6rem;  /* Sets font size for elements with class 'tempTitle' */
 }
 
 .app {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: rgba(0,0,0,0.4);
-  color: #fff;
+  width: 100%;  /* Sets width of the app to 100% of its container */
+  height: 100vh;  /* Sets height of the app to 100% of the viewport height */
+  position: relative;  /* Positions the element relative to its normal position */
+  background-color: rgba(0,0,0,0.4);  /* Sets background color with transparency */
+  color: #fff;  /* Sets text color to white */
 }
 
 .app:before {
-  content: '';
-  background: url('./Picture/sunset.jpg') no-repeat center center/cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  content: '';  /* Generates empty content before the app element */
+  background: url('./Picture/sunset.jpg') no-repeat center center/cover;  /* Sets background image, no repeat, centered, cover entire element */
+  position: absolute;  /* Positions the pseudo-element absolutely */
+  width: 100%;  /* Sets width to 100% of the parent element */
+  height: 100%;  /* Sets height to 100% of the parent element */
+  top: 0;  /* Positions the top edge of the pseudo-element at the top of the parent element */
+  left: 0;  /* Positions the left edge of the pseudo-element at the left of the parent element */
+  z-index: -1;  /* Places the pseudo-element behind other elements */
 }
 
 .app .search {
-  text-align: center;
-  padding: 1rem;
+  text-align: center;  /* Centers text inside the search container */
+  padding: 1rem;  /* Adds padding around the search container */
 }
 
 .app input {
-  padding: .7rem 1.5rem;
-  font-size: 1.2rem;
-  border-radius: 25px;
-  border: 1px solid rgba(255,255,255, 0.8);
-  background: rgba(255,255,255, 0.1);
-  color: #f8f8f8;
+  padding: .7rem 1.5rem;  /* Adds padding inside the input element */
+  font-size: 1.2rem;  /* Sets font size for the input element */
+  border-radius: 25px;  /* Rounds the corners of the input element */
+  border: 1px solid rgba(255,255,255, 0.8);  /* Sets border color and transparency */
+  background: rgba(255,255,255, 0.1);  /* Sets background color with transparency */
+  color: #f8f8f8;  /* Sets text color inside the input element */
 }
 
 ::placeholder {
-  color: #f8f8f8;
+  color: #f8f8f8;  /* Sets placeholder text color */
 }
 
 .container {
-  max-width: 700px;
-  height: auto;
-  margin: auto;
-  padding: 0 1rem;
-  position: relative;
-  top: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  max-width: 700px;  /* Sets maximum width for the container */
+  height: auto;  /* Sets height to auto, adapting to the content */
+  margin: auto;  /* Centers the container horizontally */
+  padding: 0 1rem;  /* Adds horizontal padding inside the container */
+  position: relative;  /* Positions the container relative to its normal position */
+  top: 10%;  /* Moves the container 10% from the top */
+  display: flex;  /* Uses flexbox for the container layout */
+  flex-direction: column;  /* Aligns flex items in a column */
+  justify-content: space-between;  /* Distributes space between flex items */
 }
 
 .app .top {
-  width: 100%;
-  margin: 1rem auto;
+  width: 100%;  /* Sets width to 100% of the parent container */
+  margin: 1rem auto;  /* Adds vertical margin and centers horizontally */
 }
 
 .app .description {
-  position: relative;
-  right: -90%;
-  transform-origin: 0 0;
-  transform: rotate(269deg);
+  position: relative;  /* Positions the element relative to its normal position */
+  right: -90%;  /* Moves the element 90% to the left */
+  transform-origin: 0 0;  /* Sets the origin for transformations to the top-left corner */
+  transform: rotate(269deg);  /* Rotates the element 269 degrees */
 }
 
 .app .bottom {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  width: 100%;
-  margin: 1rem auto;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: rgba(255,255,255, 0.2);
+  display: flex;  /* Uses flexbox for the bottom section layout */
+  justify-content: space-evenly;  /* Evenly distributes space between flex items */
+  text-align: center;  /* Centers text inside the bottom section */
+  width: 100%;  /* Sets width to 100% of the parent container */
+  margin: 1rem auto;  /* Adds vertical margin and centers horizontally */
+  padding: 1rem;  /* Adds padding inside the bottom section */
+  border-radius: 12px;  /* Rounds the corners of the bottom section */
+  background-color: rgba(255,255,255, 0.2);  /* Sets background color with transparency */
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 700;  /* Sets font weight to bold */
 }
